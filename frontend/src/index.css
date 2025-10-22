@@ -1,0 +1,89 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centered container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass effect card */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Input styles */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-group .icon {
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.reserve-btn {
+  display: inline-block;
+  background: #ff7e5f;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.reserve-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

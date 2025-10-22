@@ -1,0 +1,40 @@
+.page-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Specific layouts for different page types */
+.page-layout.auth-page {
+  align-items: center;
+}
+
+.page-layout.form-page {
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+
+.page-layout.content-page {
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-layout {
+    padding: 1rem;
+  }
+  
+  .page-layout.form-page {
+    padding-top: 2rem;
+  }
+}

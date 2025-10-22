@@ -1,0 +1,272 @@
+.confirmation-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+  overflow-y: auto;
+}
+
+.confirmation-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  min-height: auto;
+}
+
+.success-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.success-header h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.success-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.reservation-details {
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.reservation-details h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.detail-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-icon {
+  color: #3498db;
+  font-size: 1.2rem;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.detail-item strong {
+  color: #2c3e50;
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.detail-item p {
+  color: #5a6c7d;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cuisine-badge,
+.price-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.cuisine-badge {
+  background: #3498db;
+  color: white;
+}
+
+.price-badge {
+  background: #2c3e50;
+  color: white;
+}
+
+.special-requests {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #5a6c7d;
+  font-style: italic;
+  margin: 0;
+  border-left: 4px solid #3498db;
+}
+
+.reservation-id {
+  background: #e8f5e8;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #27ae60;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #d5f4e6;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #27ae60;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.btn-secondary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.confirmation-footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.confirmation-footer p {
+  color: #7f8c8d;
+  margin: 0;
+  font-style: italic;
+}
+
+.error-message {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h2 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.error-message p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .confirmation-container {
+    padding: 0.5rem;
+    padding-top: 1rem;
+  }
+  
+  .confirmation-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .success-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .success-header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .detail-section {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .confirmation-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 250px;
+  }
+}

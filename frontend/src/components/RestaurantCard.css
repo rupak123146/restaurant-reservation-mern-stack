@@ -1,0 +1,303 @@
+.restaurant-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  display: block;
+}
+
+.restaurant-card:hover .restaurant-image img {
+  transform: scale(1.05);
+}
+
+.price-badge {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.restaurant-info {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.restaurant-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star {
+  font-size: 0.9rem;
+}
+
+.star.filled {
+  color: #f39c12;
+}
+
+.star.half {
+  color: #f39c12;
+}
+
+.star.empty {
+  color: #bdc3c7;
+}
+
+.rating-number {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.cuisine-badge {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  display: block;
+  visibility: visible;
+}
+
+.restaurant-details {
+  margin-bottom: 1rem;
+  display: block;
+  visibility: visible;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #5a6c7d;
+  font-size: 0.9rem;
+}
+
+.detail-icon {
+  color: #3498db;
+  font-size: 0.8rem;
+  width: 12px;
+}
+
+.availability-section {
+  margin-bottom: 1.5rem;
+  display: block;
+  visibility: visible;
+}
+
+.availability-status {
+  margin-bottom: 1rem;
+}
+
+.availability-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.availability-badge.available {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+}
+
+.availability-badge.unavailable {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.available-slots {
+  margin-bottom: 0;
+  display: block;
+  visibility: visible;
+}
+
+.unavailable-message {
+  padding: 1rem;
+  background: #fdf2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.unavailable-text {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.slots-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time-slot {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.reserve-btn {
+  flex: 1;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.reserve-btn.disabled,
+.reserve-btn:disabled {
+  background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.reserve-btn.disabled:hover,
+.reserve-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.feedback-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 20px;
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.feedback-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.reserve-btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .restaurant-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .rating {
+    align-self: flex-start;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .feedback-btn {
+    justify-content: center;
+  }
+}
